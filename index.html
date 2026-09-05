@@ -1,1 +1,212 @@
-this is html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudify</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #0b1f3a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1677ff;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cloud {
+            font-size: 150px;
+        }
+
+        .services {
+            padding: 60px 8%;
+            background: white;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 280px;
+            padding: 30px;
+            background: #f4f7fb;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #0b1f3a;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .cloud {
+                font-size: 100px;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">☁ Cloudify</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Cloudify Your Business</h1>
+
+            <p>
+                Powerful, secure and scalable cloud solutions
+                designed to help your business grow faster.
+            </p>
+
+            <a href="#services" class="btn">Get Started</a>
+        </div>
+
+        <div class="cloud">
+            ☁️
+        </div>
+    </section>
+
+    <section class="services" id="services">
+
+        <h2>Our Cloud Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div style="font-size:50px;">☁️</div>
+                <h3>Cloud Storage</h3>
+                <p>
+                    Store your important files securely
+                    and access them from anywhere.
+                </p>
+            </div>
+
+            <div class="card">
+                <div style="font-size:50px;">🔒</div>
+                <h3>Cloud Security</h3>
+                <p>
+                    Protect your applications and data
+                    with modern security solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <div style="font-size:50px;">⚡</div>
+                <h3>Cloud Computing</h3>
+                <p>
+                    Scale your applications quickly with
+                    reliable cloud computing resources.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Cloudify. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
